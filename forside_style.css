@@ -63,29 +63,32 @@ body{
 
 .maskot{
     position: absolute;
-    top: 80%;
-    right: -13%;
+    top: 81%;
+    right: 2%;
     z-index: 100;
     
 }
-.maskot img{
-    width: 40%;
+.maskot {
+    width: 10%;
     height: auto;
 }
 
+
+
 .taleboble{
     position: absolute;
-    top: 63%;
-    right: 2%;
+    top: 65%;
+    right: 9%;
     z-index: 100;
 }
-.taleboble img{
-    width: 60%;
+.taleboble {
+    width: 10%;
+    height: auto;
 }   
 
 
 .taleboble, .maskot, .kontakt, .menu{
-    animation: opacity 10s  ease-out;
+    /* animation: opacity 10s  ease-out; */
 }
 
 
