@@ -8,21 +8,22 @@
     margin:0;
     padding:0;
 }
-html {
-    font-size: 16px;
+body {
     background-color:#000;
 }
-body {
+#wrapper{
+    font-size: 16px;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
     color: #fff;
-    max-width:600px;
-    margin:10px auto;
+    margin: 0 auto;
     position: relative;
 }
-/* Additionnal styles */
+
 .video-slider {
-    width: 100%;
-    height: 20em;
+    
+    width: 80rem;
+    height: 40rem;
     background: #444;
     position: relative;
     overflow: hidden;
