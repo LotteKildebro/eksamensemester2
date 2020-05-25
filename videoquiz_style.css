@@ -12,19 +12,21 @@ body {
     background-color:#000;
 }
 #wrapper{
-    font-size: 16px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     color: #fff;
     margin: 0 auto;
     position: relative;
 }
+#quiz-container {
+    align-items: center;
+}
 
 .video-slider {
     
     width: 80rem;
     height: 40rem;
-    background: #444;
+    background: rgb(0, 0, 0);
     position: relative;
     overflow: hidden;
 }
@@ -43,24 +45,31 @@ body {
 .video{
     height: 120%;
     width: 100%;
-    border:0;
+    border: 10%;
 }
 
 .slide-arrow{
   
     cursor: pointer;
-    opacity: .2;
-}
-.slide-arrow:hover{
     opacity: 1;
 }
+.slide-arrow:hover{
+    opacity: .2;
+}
 .slideshow-container {
+    background-color: rgb(235, 234, 234);
     text-align: center;
+    margin: 5px 200px;
+    padding: 1%;
+    border-radius: 7px;
+    
 }
 .slideshow-container h3{
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .mySlides h4 {
     margin: 2% 0;
+    color: black;
 
 }
