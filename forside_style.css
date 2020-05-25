@@ -30,6 +30,9 @@ body{
       height: 100vh;
   }
 
+ h1, h6, .kontakt a{
+    font-family: 'Oswald', sans-serif;
+  }
 .menu{
     
     position: absolute;
@@ -115,7 +118,13 @@ body{
     color: #ea5255;
     border: solid 2px #ea5255;
   }
-
+.header{
+    color:white;
+    position: absolute;
+    z-index: -2;
+    left: 41%;
+    top:67%;
+}
   .virus{
       position: absolute;
       z-index: -2;
@@ -169,8 +178,6 @@ body{
 }
 
 
-
-
 @keyframes opacity {
     0% {
         display: none;
@@ -192,9 +199,6 @@ body{
 }
 
 
-
-
-
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -203,8 +207,6 @@ body{
         transform:rotate(360deg);
     }
 }
-
-
 
 @keyframes grow {
         0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -297,9 +299,6 @@ body.menu-active nav#slide-menu ul { left: 0px; opacity: 1; }
 /*
   Content
 */
-
-
-
 	div.menu-trigger {
 		position: fixed;
 		cursor: pointer;
