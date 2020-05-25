@@ -53,3 +53,13 @@ body {
 .slide-arrow:hover{
     opacity: 1;
 }
+.slideshow-container {
+    text-align: center;
+}
+.slideshow-container h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mySlides h4 {
+    margin: 2% 0;
+
+}
