@@ -305,7 +305,6 @@ body.menu-active nav#slide-menu ul { left: 0px; opacity: 1; }
 ;
     }
 	
-}
 
 body.menu-active div#content { left: 284px; border-radius: 7px 0 0 7px; }
 body.menu-active div#content .menu-trigger { left: 294px; }
