@@ -8,123 +8,47 @@
 
     <link rel="shortcut icon" href="">
     <link href="videoquiz_style.css" rel="stylesheet" type="text/css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://www.youtube.com/iframe_api"></script>
+ <!-- google font -->
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+ <!-- bootstrap CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <!-- Bootstrap JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+     crossorigin="anonymous">
 
     <title>Covidenskab</title>
 </head>
 <body>
   <div id="wrapper">
-    <div class="video-slider">
-		<!-- SLIDE 1 -->
-		<div class="slide">
-			<img class="video" src="billeder/105479283-teacher-telling-a-story-to-nursery-children-in-the-garden-cute-kids-listening-to-their-teacher-tell-.jpg">
-		</div>
-		<!-- SLIDE 2 -->
-		<div class="slide">
-			<img class="video" src="billeder/images (1).jpg">
-        </div>
-        <!-- SLIDE 3 -->
-		<div class="slide">
-			<img class="video" src="billeder/images (2).jpg">
-        </div>
-         <!-- SLIDE 3 -->
-		<div class="slide">
-			<img class="video" src="billeder/images (3).jpg">
-        </div>
-          <!-- SLIDE 3 -->
-		<div class="slide">
-			<img class="video" src="billeder/8.png">
-        </div>
-
-		
-    </div>
-    
-    <div class="slideshow-container">
-
-        <div class="mySlides">
-            <h3>Hvorfor bør man spritte hænder ofte?</h3>
-            <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi håndsprit kan kurere dig og andre for covid-19</h4></div>
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi covid-19 kan overføres gennem håndkontakt</h4></div>
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi håndsprit generelt er sundt</h4></div>
-        </div>
-
-        <div class="mySlides">
-           
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Næste Spørgsmål</h4></div>
-          <div class="slide-arrow left next" onclick="plusSlides(-1)">
-            <h4>tilbage</h4></div>
-        
-        </div>
-          
-        <div class="mySlides">
-            <h3>Hvorfor bør man ikke ses med mange mennesker, selvom man ikke har symptomer?</h3>
-            <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi folk kan skjule at de har symptomer, selvom de faktisk har det.</h4></div>
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi covid-19 kan spredes igennem luften, så det er bedst at blive indenfor.</h4></div>
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi man nødvendigvis ikke har symptomer selvom man er smittet.</h4></div>
-          <div class="slide-arrow left next" onclick="plusSlides(-1)">
-            <h4>tilbage</h4></div>
-        
-        </div>
-
-        <div class="mySlides">
-           
-            <div class="slide-arrow right next" onclick="plusSlides(1)">
-            <h4>Næste Spørgsmål</h4></div>
-            <div class="slide-arrow left next" onclick="plusSlides(-1)">
-              <h4>tilbage</h4></div>
-          
-          </div>
-
-        <div class="mySlides">
-            <h3>Hvorfor er covid-19 ikke skadeligt for flagermusene, når vi har fået den derfra?</h3>
-            <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi flagermus har et stærkere immunforsvar end mennesker</h4></div>
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi de har højere kropstemperatur end mennesker.</h4></div>
-          <div class="slide-arrow right next" onclick="plusSlides(1)">
-          <h4>Fordi flagermus spiser insekter der dræber coronavirus.3.</h4></div>
-          <div class="slide-arrow left next" onclick="plusSlides(-1)">
-            <h4>tilbage</h4></div>
-        
-        </div>
-
-        <div class="mySlides">
-           
-            <div class="slide-arrow right next" onclick="plusSlides(1)">
-            <h4>Næste Spørgsmål</h4></div>
-            <div class="slide-arrow left next" onclick="plusSlides(-1)">
-              <h4>tilbage</h4></div>
-          
-          </div>
-
-     
-
-        <div class="mySlides">
-           
-          <a href="historie.html">
-          <h4>start forfra</h4></a>
-
-          <a href="index.html">
-            <h4>Gå til forside</h4></a>
-        
-        </div>
-        
-        
-
-        
-        </div>
-
-
+     <!-- <div id="start">
+    <img src="billeder/images (1).jpg" >
+    <h5 id="mulighed1"> ja </h5>
+    <h5 id="mulighed2"> nej </h5>
+</div>  -->
+    <div id="div1">
+           <img src="billeder/images (2).jpg" >
+           <h5 id="mulighed3"> ja </h5>
+           <h5 id="mulighed4"> nej </h5>
+       </div> 
+       <div id="div2">
+        <img src="billeder/images (3).jpg" >
+        <h5 id="mulighed1"> ja </h5>
+        <h5 id="mulighed2"> nej </h5>
+    </div> 
+    <div id="div3">
+        <img src="billeder/images (4).jpg" >
+        <h5 id="mulighed1"> ja </h5>
+        <h5 id="mulighed2"> nej </h5>
+    </div> 
+    <div id="div4">
+        <img src="billeder/images (5).jpg" >
+        <h5 id="mulighed1"> ja </h5>
+        <h5 id="mulighed2"> nej </h5>
+    </div> 
     
       <script src="script/quiz.js "></script>
    </div>  <!-- end wrapper -->
