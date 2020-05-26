@@ -45,21 +45,38 @@
       </div>
       <div class="menu-trigger"><h5 class="menu">MENU</h5></div>
 
+
+      
 <img class="virus" src="billeder/covid.png" alt="virus covid-19">
 
 <h1 class="header">COVIDENSKAB</h1>
 
      <div class="sprite icon1">
 
-      <a href="#">
+      <a onClick="overlayspil()">
             <img alt="controller icon" src="Icon ideas/kontrollerblack.png">
         </a>
 
-        <a href="#">
+        <a onClick="overlayspil()">
             <img alt="controller icon" class="img-top" src="Icon ideas/kontrollerrod.png">
         </a>
 
     </div>
+
+    <div class="modalbox minispil-box" >
+      <div class="dialog">
+      <button  title="Close" onClick="overlayspil()"  class="closebutton" id="close">X</button>
+       <div>
+    <div class="container indhold">
+        <h2> Mini spil</h2>
+        <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+           qui perferendis error quibusdam obcaecati enim commodi sit facere earum amet
+            voluptate repudiandae aliquid, dicta ex repellat, rerum consectetur? Beatae, maiores?</P>
+            <a href="videoquiz.html"> Gå til quiz</a>
+          </div>
+            </div>
+            </div>
+       </div>
     
     <div class="sprite icon2">
 
@@ -67,23 +84,54 @@
             <img alt="klik quiz icon" src="Icon ideas/klikquizblack.png">
           </a>
   
-          <a href="historie.html">
+          <a onClick="overlay()">
             <img alt="klik quiz icon" class="img-top" src="Icon ideas/klikquizrod.png">
           </a>
   
       </div>
+     
+        
+        <div class="modalbox historie-box" >
+          <div class="dialog">
+          <button  title="Close" onClick="overlay()"  class="closebutton" id="close">X</button>
+           <div>
+<div class="container indhold">
+            <h2> Klik historie</h2>
+            <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+               qui perferendis error quibusdam obcaecati enim commodi sit facere earum amet
+                voluptate repudiandae aliquid, dicta ex repellat, rerum consectetur? Beatae, maiores?</P>
+                <a href="videoquiz.html"> Gå til quiz</a>
+              </div>
+                </div>
+                </div>
+           </div>
 
         <div class="sprite icon3">
 
-        <a href="videoquiz.html">
+        <a onClick="overlayquiz()">
             <img src="Icon ideas/quizblack.png" alt="quiz icon">
           </a>
   
-          <a href="videoquiz.html">
+          <a onClick="overlayquiz()">
             <img alt="quiz icon" class="img-top" src="Icon ideas/quizrod.png">
           </a>
   
       </div>
+
+      <div class="modalbox quiz-box" >
+        <div class="dialog">
+        <button  title="Close" onClick="overlayquiz()"  class="closebutton" id="close">X</button>
+         <div>
+<div class="container indhold">
+          <h2> Video med Quiz</h2>
+          <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+             qui perferendis error quibusdam obcaecati enim commodi sit facere earum amet
+              voluptate repudiandae aliquid, dicta ex repellat, rerum consectetur? Beatae, maiores?</P>
+              <a href="videoquiz.html"> Gå til quiz</a>
+            </div>
+              </div>
+              </div>
+         </div>
 
       <div class="sprite icon4">
 
@@ -108,13 +156,10 @@
     
       
         <img src="billeder/fcf0a50709e283336ca69100eb79d738.png" class="taleboble" alt="dreng med bog">
-  
-
-
 
     </div>
     
-    <script src="script/script.js "></script>
+    <script src="script/quiz.js "></script>
      
     </div> <!--end wrapper -->
 </body>

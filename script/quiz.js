@@ -1,6 +1,43 @@
+function overlay() {
+
+    if(!$('.historie-box').is(':visible')){
+        $(".historie-box").show();
+
+    }else{
+        $(".historie-box").hide();
+    }
+}
+ $(".overly").click(function(){
+overlay() ; 
+})
+
+function overlayspil() {
+
+    if(!$('.minispil-box').is(':visible')){
+        $(".minispil-box").show();
+
+    }else{
+        $(".minispil-box").hide();
+    }
+}
+ $(".overly").click(function(){
+overlayspil() ; 
+})
+
+function overlayquiz() {
+
+    if(!$('.quiz-box').is(':visible')){
+        $(".quiz-box").show();
+
+    }else{
+        $(".quiz-box").hide();
+    }
+}
+ $(".overly").click(function(){
+overlayquiz() ; 
+})
 
 // skifter video vi animation slide + video controls
-
 $(document).ready(function () {
     var pos = 0,
         slides = $('.slide'),
