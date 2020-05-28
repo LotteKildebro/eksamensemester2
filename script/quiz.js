@@ -91,9 +91,7 @@ function onYouTubeIframeAPIReady() {
     })
 }
 
-
 // slider text i forhold til video
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
