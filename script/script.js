@@ -70,9 +70,6 @@ function validateForm() {
     confirm("Tak for din besked! ");
     window.location.reload();
     return (true);
-
-
-
 }
 function maxLength() {
     if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
