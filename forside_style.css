@@ -69,8 +69,8 @@ body{
     
     position: absolute;
     color:white;
-    left: 39.5%;
-    top:65%;
+    left: 38.8%;
+    top:63%;
     z-index: -2;
     text-align: center;
 }
@@ -241,86 +241,6 @@ body{
 }
 
 
-
-nav#slide-menu {
-	position: fixed;
-	top: 0;
-	left: -200px;
-	bottom: 0;
-	display: block;
-	float: left;
-	width: 100%;
-	max-width: 284px;
-	height: 100%;
-
-	-moz-transition: all 300ms;
-	-webkit-transition: all 300ms;
-    transition: all 300ms;
-}
-
-	 ul {
-		display: block;
-		margin: 40px;
-		padding: 0;
-		list-style: none;
-		opacity: 0.5;
-
-		-moz-transition: all 300ms;
-		-webkit-transition: all 300ms;
-        transition: all 300ms;
-     }
-
-		li {
-			color: #dfe5eb;
-			padding: 6px 0;
-			cursor: pointer;
-
-			li:hover { color: #59e9df; }
-		}
-
-		li:before {
-			font-family: "ico";
-			font-style: normal;
-			font-weight: normal;
-			speak: none;
-			display: inline-block;
-			text-decoration: inherit;
-			width: 1em;
-			color: #59e9df;
-			margin-right: 12px;
-			text-align: center;
-			font-variant: normal;
-			font-size: 0.75em;
-			text-transform: none;
-			line-height: 1em;
-		}
-
-		li.sep { 
-			margin-top: 7px; 
-			padding-top: 14px; 
-			border-top: 1px solid lighten(#556270, 10%); 
-		}
-
-
-
-body.menu-active nav#slide-menu { left: 0px; }
-body.menu-active nav#slide-menu ul { left: 0px; opacity: 1; }
-
-/*
-  Content
-*/
-	div.menu-trigger {
-		position: fixed;
-		cursor: pointer;
-;
-    }
-	
-
-body.menu-active div#content { left: 284px; border-radius: 7px 0 0 7px; }
-body.menu-active div#content .menu-trigger { left: 294px; }
-
-
-
 .container-overlay{
     float:none;
     margin:auto;
@@ -380,7 +300,8 @@ body.menu-active div#content .menu-trigger { left: 294px; }
 
 .historie-box h2, .minispil-box h2 , .quiz-box h2{
     font-family: 'Oswald', sans-serif;
-    margin-top: 10%;
+    font-size: 5vh;
+    margin-top: 7%;
     margin-left: 10%;
     margin-bottom: 2%;
     display:block;
@@ -389,9 +310,7 @@ body.menu-active div#content .menu-trigger { left: 294px; }
     
 }
 .historie-box p, .minispil-box p, .quiz-box p{
-    margin: 2% 9% 5% 10%;
-    
-    
+    margin: 2% 9% 2% 10%;
     font-family: 'Open Sans', sans-serif;
 }
 .historie-box a, .minispil-box a, .quiz-box a{
@@ -410,6 +329,7 @@ body.menu-active div#content .menu-trigger { left: 294px; }
     color: #000;
     font-weight: bold;
     margin: 0 auto;
+    margin-bottom: 2%;
 }
 .historie-box a:hover, .minispil-box a:hover, .quiz-box a:hover{
 color: #fff;
