@@ -377,3 +377,40 @@ body.menu-active div#content .menu-trigger { left: 294px; }
       z-index: 9999;
     cursor:pointer
   }
+
+
+
+
+.historie-box h2, .minispil-box h2 , .quiz-box h2{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+.historie-box p, .minispil-box p, .quiz-box p{
+    margin: 5% 15% 10% 15%;
+    
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.historie-box a, .minispil-box a, .quiz-box a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;;
+    display: block;
+    width: 15vw;
+    height: 8vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    text-align: center;
+    padding-top: 0%;
+    border-radius: 15px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.historie-box a:hover, .minispil-box a:hover, .quiz-box a:hover{
+color: #fff;
+box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
+
+}
