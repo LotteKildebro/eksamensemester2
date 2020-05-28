@@ -378,13 +378,11 @@ body.menu-active div#content .menu-trigger { left: 294px; }
   }
 
 
-
-
 .historie-box h2, .minispil-box h2 , .quiz-box h2{
     font-family: 'Oswald', sans-serif;
-    margin-top: 7%;
-    margin-left: 10%;
-    margin-bottom: 3%;
+    margin-top: 10%;
+    margin-left: 36%;
+    
     
 }
 .historie-box p, .minispil-box p, .quiz-box p{
