@@ -3,6 +3,12 @@
     align-items: center;
     display: flex;
 }
+h1 {
+  padding: 2px;
+  font-size: 5em;
+  color:#ffffff;
+  font-family: 'Oswald', sans-serif;
+}
 .infoheader {
     align-items: center;
     text-align: center;
