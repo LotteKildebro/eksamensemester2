@@ -133,8 +133,8 @@
     
     .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
         color: #fff;
-        border-color: #81a96f;
-        background: #81a96f;
+        border-color: #23a6d5;
+        background: #23a6d5;
         outline: none;
     }
     
