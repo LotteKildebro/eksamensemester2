@@ -21,13 +21,12 @@ body {
 }
 
 .video-slider {
-   margin: 0 auto;
-    width: 65rem;
-    height: 30rem;
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
     background: rgb(0, 0, 0);
     position: relative;
     overflow: hidden;
-    padding: 300px 0;
 }
 .slide {
     position: absolute;
