@@ -1,15 +1,15 @@
 /*
   Slidemenu
 */
-(function() {
-	var $body = document.body
-	, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+(function () {
+    var $body = document.body
+        , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
 
-	if ( typeof $menu_trigger !== 'undefined' ) {
-		$menu_trigger.addEventListener('click', function() {
-			$body.className = ( $body.className == 'menu-active' )? '' : 'menu-active';
-		});
-	}
+    if (typeof $menu_trigger !== 'undefined') {
+        $menu_trigger.addEventListener('click', function () {
+            $body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+        });
+    }
 
 }).call(this);
 
@@ -18,11 +18,7 @@
 function validateForm() {
 
     event.preventDefault();
-    if (document.myForm.penge.value == "") {
-        msg0.innerHTML = 'angiv et beløb, tak :-)';
-        document.myForm.penge.focus();
-        return false;
-    }
+
     if (document.myForm.email.value == "") {
         msg1.innerHTML = 'angiv email';
         document.myForm.email.focus();
@@ -39,17 +35,13 @@ function validateForm() {
         document.myForm.email.focus();
         return false;
     }
-    if (document.myForm.cvr.value == "") {
-        msg4.innerHTML = 'angiv cvr';
-        document.myForm.cvr.focus();
+    if (document.myForm.message.value == "") {
+        msg4.innerHTML = 'skriv i feltet';
+        document.myForm.message.focus();
         return false;
     }
-    if (document.myForm.dato.value == "") {
-        msg5.innerHTML = 'angiv en valid dato';
-        document.myForm.dato.focus();
-        return false;
-    }
-    confirm("Tak for donationen! ");
+
+    confirm("Tak for din besked! ");
     window.location.reload();
     return (true);
 

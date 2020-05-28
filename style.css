@@ -13,12 +13,34 @@
   }
   
     #msg0,#msg1, #msg2, #msg3, #msg4, #msg5 {
-        color: red;
+        color:#ffffff;
     }
-    
+    body{
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    #wrapper { 
+        background: url(billeder/Baggrund.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        position: relative;
+      }
+      #baggrund{
+        position: relative;
+        height: 100vh;
+    }
   
     #success-message {
       opacity: 0;
+    }
+    h4{
+        color: #fff;
     }
     
     .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
@@ -32,9 +54,10 @@
     }
     
     .form-title {
-      padding: 25px;
+      padding: 2px;
       font-size: 5em;
-      color:#3a5235;
+      color:#ffffff;
+      font-family: 'Oswald', sans-serif;
     }
    .checkbox{
        float: left;
@@ -77,8 +100,8 @@
     }
     
     .btn-mod.btn-border {
-        color: #000000;
-        border: 1px solid #000000;
+        color: #ffffff;
+        border: 1px solid #ffffff;
         background: transparent;
     }
     
