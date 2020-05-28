@@ -347,7 +347,6 @@ body.menu-active div#content .menu-trigger { left: 294px; }
       -webkit-overflow-scrolling: touch;
   }
   .modalbox >.dialog {
-    min-height: 650px;
       max-width: 50%;
       position: relative;
       top: 10%;
@@ -383,19 +382,20 @@ body.menu-active div#content .menu-trigger { left: 294px; }
 
 .historie-box h2, .minispil-box h2 , .quiz-box h2{
     font-family: 'Oswald', sans-serif;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 10%;
+    margin-bottom: 3%;
     
 }
 .historie-box p, .minispil-box p, .quiz-box p{
-    margin: 5% 15% 10% 15%;
+    margin: 2% 9% 5% 10%;
     
     
     font-family: 'Open Sans', sans-serif;
 }
 .historie-box a, .minispil-box a, .quiz-box a{
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;;
+    font-size: 6vh;;
     display: block;
     width: 15vw;
     height: 8vh;
@@ -403,7 +403,8 @@ body.menu-active div#content .menu-trigger { left: 294px; }
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     text-align: center;
-    padding-top: 0%;
+    padding-bottom: 10%;
+border:solid 2px #333;
     border-radius: 15px;
     color: #000;
     font-weight: bold;
@@ -413,4 +414,11 @@ body.menu-active div#content .menu-trigger { left: 294px; }
 color: #fff;
 box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
 
+}
+.historie-box img, .minispil-box img, .quiz-box img{
+    width: 80%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
 }
