@@ -402,3 +402,55 @@ box-shadow: 6px 7px 5px 1px rgba(0,0,0,0.75);
     0% {transform: translateX(0)}
     100% {transform: translateX(200%)}
 }
+
+/*MENU*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 10;
+    left: 10;
+    background-color: #23a5d5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .sidenav a:hover {
+    color: #ea5255;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  .opennav{
+     position: absolute;
+     margin-left: 50px;
+     margin-top: 30px;
+      color: #fff;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /*MENU DONE*/

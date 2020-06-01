@@ -20,41 +20,41 @@ function topFunction() {
 
 function overlay() {
 
-    if(!$('.historie-box').is(':visible')){
+    if (!$('.historie-box').is(':visible')) {
         $(".historie-box").show();
 
-    }else{
+    } else {
         $(".historie-box").hide();
     }
 }
- $(".overly").click(function(){
-overlay() ; 
+$(".overly").click(function () {
+    overlay();
 })
 
 function overlayspil() {
 
-    if(!$('.minispil-box').is(':visible')){
+    if (!$('.minispil-box').is(':visible')) {
         $(".minispil-box").show();
 
-    }else{
+    } else {
         $(".minispil-box").hide();
     }
 }
- $(".overly").click(function(){
-overlayspil() ; 
+$(".overly").click(function () {
+    overlayspil();
 })
 
 function overlayquiz() {
 
-    if(!$('.quiz-box').is(':visible')){
+    if (!$('.quiz-box').is(':visible')) {
         $(".quiz-box").show();
 
-    }else{
+    } else {
         $(".quiz-box").hide();
     }
 }
- $(".overly").click(function(){
-overlayquiz() ; 
+$(".overly").click(function () {
+    overlayquiz();
 })
 
 // skifter video vi animation slide + video controls
@@ -96,26 +96,34 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
 
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
-  slides[slideIndex-1].style.display = "block";  
- 
+    slides[slideIndex - 1].style.display = "block";
+
 };
 
+//NAV
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 

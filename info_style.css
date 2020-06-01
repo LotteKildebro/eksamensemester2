@@ -20,6 +20,37 @@ h4{
     text-align: center;
     margin: 2px;
   }
+ .kontakt .mielotbut{
+   margin-right: 90px;
+ }
+ .kontakt .davjobut{
+  margin-left: 90px;
+}
+
+  .kontakt a:link, .kontakt a:visited, .menu a:link, .menu a:visited {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+ .kontakt a:link, .kontakt a:visited{
+    border: solid 2px white;
+    border-radius: 15px;
+    padding: 1px 15px;
+  }
+  
+.kontakt a:hover, .kontakt a:active, .menu a:hover, .menu a:active{
+    color: #ea5255;
+   
+  }
+
+  .kontakt a:hover, .kontakt a:active{
+    color: #ea5255;
+    border: solid 2px #ea5255;
+  }
   /*-----scroll down------*/
   body {
     background-color: black;
@@ -279,3 +310,55 @@ h4{
 #topBtn:hover {
   color: #81a96f;
 }
+
+/*MENU*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 10;
+  background-color: #23a5d5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidenav a:hover {
+  color: #ea5255;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.opennav{
+   position: absolute;
+   margin-left: 50px;
+   margin-top: 30px;
+    color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*MENU DONE*/
