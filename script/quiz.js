@@ -1,7 +1,7 @@
 //Get the button
 var mybutton = document.getElementById("topBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+//scrool funktion
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -17,7 +17,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-
+// funktion til at gemme og vise pop up boxe på forsiden
 function overlay() {
 
     if (!$('.historie-box').is(':visible')) {
@@ -64,7 +64,6 @@ $(document).ready(function () {
         numOfSlides = slides.length;
 
     function nextSlide() {
-        // `[]` returns a vanilla DOM object from a jQuery object/collection
         slides[pos].video.stopVideo()
         slides.eq(pos).animate({ left: '-100%' }, 500);
         pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
@@ -84,9 +83,9 @@ $(document).ready(function () {
 
 function onYouTubeIframeAPIReady() {
     $('.slide').each(function (index, slide) {
-        // Get the `.video` element inside each `.slide`
+        // tag -video elentet inde i hver .slide
         var iframe = $(slide).find('.video')[0]
-        // Create a new YT.Player from the iFrame, and store it on the `.slide` DOM object
+        // laver ny YT plater fra ifram og gemmed den i slide objectet
         slide.video = new YT.Player(iframe)
     })
 }
