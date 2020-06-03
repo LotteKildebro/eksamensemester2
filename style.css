@@ -16,7 +16,7 @@
         color:#e73c7e;
         background-color: rgba(255, 255, 255, 0.301);
     }
-    /*Body og wrapper, baggrund */
+    /*Body og wrapper, baggrund **/
     body{
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
