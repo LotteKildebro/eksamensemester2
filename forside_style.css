@@ -25,8 +25,10 @@ body{
       position: relative;
       height: 100vh;
 }
-
-h1, h6, .kontakt a{
+.kontakt a{
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h6{
     font-family: 'Oswald', sans-serif;
 }
 
