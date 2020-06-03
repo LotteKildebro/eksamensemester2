@@ -1,40 +1,7 @@
-/*
-  Slidemenu
-*/
-(function () {
-    var $body = document.body
-        , $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
-
-    if (typeof $menu_trigger !== 'undefined') {
-        $menu_trigger.addEventListener('click', function () {
-            $body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
-        });
-    }
-
-}).call(this);
-
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
+//Scroll ned button funktion
+//Få fat i button via #elem
 const btn = document.getElementById('elem');
-
+//Når brugeren klikker skal knappen scrolle ned
 btn.addEventListener('click', () => window.scrollTo({
     top: 800,
     behavior: 'smooth',
@@ -42,118 +9,59 @@ btn.addEventListener('click', () => window.scrollTo({
 
 // form validatation 
 function validateForm() {
-
+    //Prevent default ved klik på knappen
     event.preventDefault();
-
+    //Hvis værdien er tom, send besked 'angiv email' til class msg1
     if (document.myForm.email.value == "") {
-        msg1.innerHTML = 'angiv email';
+        msg1.innerHTML = 'Please angiv en korrekt email adresse';
         document.myForm.email.focus();
         return false;
-    }
+    } else { msg1.innerHTML = ''; }
+    //Hvis værdien er tom, send besked 'angiv navn' til class msg2
     if (document.myForm.name.value == "") {
-        msg2.innerHTML = 'angiv navn';
+        msg2.innerHTML = 'Please angiv et valid navn';
         document.myForm.name.focus();
         return false;
-    }
-
+    } else { msg2.innerHTML = ''; }
+    //Hvis værdien er tom, send besked 'angiv emne' til class msg3
     if (document.myForm.kort.value == "") {
-        msg3.innerHTML = 'angiv kortnummer';
+        msg3.innerHTML = 'Please skriv hvad dit emne drejer sig om';
         document.myForm.email.focus();
         return false;
-    }
+    } else { msg3.innerHTML = ''; }
+    //Hvis værdien er tom, send besked 'skriv i feltet' til class msg4
     if (document.myForm.message.value == "") {
-        msg4.innerHTML = 'skriv i feltet';
+        msg4.innerHTML = 'Please skriv noget i tekstfeltet';
         document.myForm.message.focus();
         return false;
-    }
+    } else { msg4.innerHTML = ''; }
+    //Returner "Tak for din besked! " hvis felterne er udfyldt korrekt
 
     confirm("Tak for din besked! ");
+    //Reload window hvis felterne er udfyldt korrekt
     window.location.reload();
+    //Korrekt udfyldning af form returnere true
     return (true);
 }
-function maxLength() {
-    if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
-    type = "number"
-    maxlength = "3"
-};
 
-
-
+//Valider email
 function validateEmail() {
+    //få fat i email value fra myForm
     var emailID = document.myForm.email.value;
+    //Der skal ingå @ i email
     atpos = emailID.indexOf("@");
+    //Der skal indgå . i email
     dotpos = emailID.lastIndexOf(".");
-
+    //Hvis atpos er mindre end 1, eller dotpos - atpos er mindre end 2
     if (atpos < 1 || (dotpos - atpos < 2)) {
+        //Skal en alert med "Please enter correct email ID" komme frem
         alert("Please enter correct email ID")
+        //Fokus på email felt
         document.myForm.email.focus();
+        //Email er udfyldt forkert, returnere false
         return false;
     }
+    //Email er udfyldt korrekt, returnere true
     return (true);
 }
-
-//NAV
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-
-
-// form validatation 
-function validateForm() {
-
-    event.preventDefault();
-
-    if (document.myForm.email.value == "") {
-        msg1.innerHTML = 'angiv email';
-        document.myForm.email.focus();
-        return false;
-    }
-    if (document.myForm.name.value == "") {
-        msg2.innerHTML = 'angiv navn';
-        document.myForm.name.focus();
-        return false;
-    }
-
-    if (document.myForm.kort.value == "") {
-        msg3.innerHTML = 'angiv kortnummer';
-        document.myForm.email.focus();
-        return false;
-    }
-    if (document.myForm.message.value == "") {
-        msg4.innerHTML = 'skriv i feltet';
-        document.myForm.message.focus();
-        return false;
-    }
-
-    confirm("Tak for din besked! ");
-    window.location.reload();
-    return (true);
-}
-function maxLength() {
-    if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
-    type = "number"
-    maxlength = "3"
-};
-
-
-
-function validateEmail() {
-    var emailID = document.myForm.email.value;
-    atpos = emailID.indexOf("@");
-    dotpos = emailID.lastIndexOf(".");
-
-    if (atpos < 1 || (dotpos - atpos < 2)) {
-        alert("Please enter correct email ID")
-        document.myForm.email.focus();
-        return false;
-    }
-    return (true);
-}
-
-
 

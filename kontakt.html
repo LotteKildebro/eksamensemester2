@@ -37,126 +37,123 @@
 
 
     <div id="wrapper">
-        <div id="baggrund" class="">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Forside</a>
-                <a href="thecrew.html">Info</a>
-                <a href="kontakt.html">Kontakt</a>
-            </div>
-
-
-            <span class="opennav" style="font-size:30px;cursor:pointer; " onclick="openNav()">&#9776; MENU</span>
-
-
-            <div class="cointainer">
-
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <h2 class="form-title">KONTAKT OS HER</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-                        <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" role="form">
-
-                            <div class="form-group">
-
-
-
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" id="emailLabel" for="email"></label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email adresse" tabindex="2">
-                                <p id="msg1"></p>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" id="nameLabel" for="name"></label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Navn" tabindex="1">
-                                <p id="msg2"></p>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label class="form-label" id="kortLabel" for="kort"></label>
-                                <input type="text" maxlength="16" type="number" class="form-control" id="kort" name="kort" placeholder="Emne">
-                                <p id="msg3"></p>
-                            </div>
-
-
-
-
-
-                            <div class="form-group">
-                                <label class="form-label" id="messageLabel" for="message"></label>
-                                <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Skriv her din besked her..." tabindex="4"></textarea>
-                                <p id="msg4"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="vehicle1" value="Bike">
-                                <label for="vehicle1 ">Tilmeld dig nyhedsbrevet</label>
-                                <br>
-                            </div>
-                            <div class="text-center margin-top-25 ">
-
-
-                                <button type="submit " id="submit " class="btn btn-mod btn-border btn-large ">Send besked</button>
-
-                            </div>
-
-                        </form>
-
-                        <!-- End form -->
-
-                    </div>
-                    <!-- End col -->
-
-                </div>
-                <!-- End row -->
-
-
-
-
-
-                <footer id="footer " class="d-flex-column text-center ">
-                    <hr class="mt-0 ">
-                    <!--Social buttons-->
-                    <div class="text-center ">
-                        <h4>SOCIAL</h4>
-                        <ul class="list-unstyled list-inline ">
-                            <li class="list-inline-item ">
-                                <a href="#! " class="sbtn btn-large mx-1 " title="Facebook ">
-                                    <i class="fab fa-facebook-square fa-2x "></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item ">
-                                <a href="#! " class="sbtn btn-large mx-1 " title="Linkedin ">
-                                    <i class="fab fa-linkedin fa-2x "></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item ">
-                                <a href="#! " class="sbtn btn-large mx-1 " title="Twitter ">
-                                    <i class="fab fa-twitter-square fa-2x "></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item ">
-                                <a href="#! " class="sbtn btn-large mx-1 " title="Youtube ">
-                                    <i class="fab fa-youtube-square fa-2x "></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/.Social buttons-->
-
-            </div>
-            <!---end of container -->
+        <div class="kontakt forside">
+            <a href="index.html">Forside</a>
         </div>
-        <!---end of background -->
+
+        <div class="cointainer">
+
+            <!--form title indenfor container-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h2 class="form-title">KONTAKT OS HER</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <!-- validateForm() tilknyttet selve form tag, funktionen køres igennem når der klikkes på button-->
+                    <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" role="form">
+
+                        <div class="form-group">
+
+
+
+                        </div>
+                        <!--email label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="emailLabel" for="email"></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email adresse" tabindex="2">
+                            <!--valider besked-->
+                            <p id="msg1"></p>
+                        </div>
+
+                        <!--navn label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="nameLabel" for="name"></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Navn" tabindex="1">
+                            <p id="msg2"></p>
+                        </div>
+
+                        <!--emne label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="kortLabel" for="kort"></label>
+                            <input type="text" maxlength="16" type="number" class="form-control" id="kort" name="kort" placeholder="Emne">
+                            <!--valider besked-->
+                            <p id="msg3"></p>
+                        </div>
+
+
+
+
+                        <!--besked label, input-->
+                        <div class="form-group">
+                            <label class="form-label" id="messageLabel" for="message"></label>
+                            <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Skriv din besked her..." tabindex="4"></textarea>
+                            <!--valider besked-->
+                            <p id="msg4"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="vehicle1" value="Bike">
+                            <label for="vehicle1 ">Tilmeld dig nyhedsbrevet</label>
+                            <br>
+                        </div>
+                        <div class="text-center margin-top-25 ">
+
+                            <!--submit button-->
+                            <button type="submit " id="submit " class="btn btn-mod btn-border btn-large ">Send besked</button>
+
+                        </div>
+
+                    </form>
+
+                    <!-- End form -->
+
+                </div>
+                <!-- End col -->
+
+            </div>
+            <!-- End row -->
+
+
+
+
+
+            <footer id="footer " class="d-flex-column text-center ">
+                <hr class="mt-0 ">
+                <!--Social buttons-->
+                <div class="text-center ">
+                    <h4>SOCIAL</h4>
+                    <ul class="list-unstyled list-inline ">
+                        <li class="list-inline-item ">
+                            <a href="#! " class="sbtn btn-large mx-1 " title="Facebook ">
+                                <i class="fab fa-facebook-square fa-2x "></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#! " class="sbtn btn-large mx-1 " title="Linkedin ">
+                                <i class="fab fa-linkedin fa-2x "></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#! " class="sbtn btn-large mx-1 " title="Twitter ">
+                                <i class="fab fa-twitter-square fa-2x "></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#! " class="sbtn btn-large mx-1 " title="Youtube ">
+                                <i class="fab fa-youtube-square fa-2x "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Social buttons-->
+
+        </div>
+        <!---end of container -->
+    </div>
+    <!---end of background -->
 
     </div>
     <!---end of wrapper -->
