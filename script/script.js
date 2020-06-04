@@ -1,67 +1,121 @@
-//Scroll ned button funktion
-//Få fat i button via #elem
-const btn = document.getElementById('elem');
-//Når brugeren klikker skal knappen scrolle ned
-btn.addEventListener('click', () => window.scrollTo({
-    top: 800,
-    behavior: 'smooth',
-}));
+//Get the button
+var mybutton = document.getElementById("topBtn");
 
-// form validatation 
-function validateForm() {
-    //Prevent default ved klik på knappen
-    event.preventDefault();
-    //Hvis værdien er tom, send besked 'angiv email' til class msg1
-    if (document.myForm.email.value == "") {
-        msg1.innerHTML = 'Please angiv en korrekt email adresse';
-        document.myForm.email.focus();
-        return false;
-    } else { msg1.innerHTML = ''; }
-    //Hvis værdien er tom, send besked 'angiv navn' til class msg2
-    if (document.myForm.name.value == "") {
-        msg2.innerHTML = 'Please angiv et valid navn';
-        document.myForm.name.focus();
-        return false;
-    } else { msg2.innerHTML = ''; }
-    //Hvis værdien er tom, send besked 'angiv emne' til class msg3
-    if (document.myForm.kort.value == "") {
-        msg3.innerHTML = 'Please skriv hvad dit emne drejer sig om';
-        document.myForm.email.focus();
-        return false;
-    } else { msg3.innerHTML = ''; }
-    //Hvis værdien er tom, send besked 'skriv i feltet' til class msg4
-    if (document.myForm.message.value == "") {
-        msg4.innerHTML = 'Please skriv noget i tekstfeltet';
-        document.myForm.message.focus();
-        return false;
-    } else { msg4.innerHTML = ''; }
-    //Returner "Tak for din besked! " hvis felterne er udfyldt korrekt
+//scrool funktion
+window.onscroll = function () { scrollFunction() };
 
-    confirm("Tak for din besked! ");
-    //Reload window hvis felterne er udfyldt korrekt
-    window.location.reload();
-    //Korrekt udfyldning af form returnere true
-    return (true);
-}
-
-//Valider email
-function validateEmail() {
-    //få fat i email value fra myForm
-    var emailID = document.myForm.email.value;
-    //Der skal ingå @ i email
-    atpos = emailID.indexOf("@");
-    //Der skal indgå . i email
-    dotpos = emailID.lastIndexOf(".");
-    //Hvis atpos er mindre end 1, eller dotpos - atpos er mindre end 2
-    if (atpos < 1 || (dotpos - atpos < 2)) {
-        //Skal en alert med "Please enter correct email ID" komme frem
-        alert("Please enter correct email ID")
-        //Fokus på email felt
-        document.myForm.email.focus();
-        //Email er udfyldt forkert, returnere false
-        return false;
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
     }
-    //Email er udfyldt korrekt, returnere true
-    return (true);
 }
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// skifter video vi animation slide + video controls
+$(document).ready(function () {
+    var pos = 0,
+        slides = $('.slide'),
+        numOfSlides = slides.length;
+
+    function nextSlide() {
+        slides[pos].video.stopVideo()
+        slides.eq(pos).animate({ left: '-100%' }, 500);
+        pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
+        slides.eq(pos).css({ left: '100%' }).animate({ left: 0 }, 500);
+    }
+
+    function previousSlide() {
+        slides[pos].video.stopVideo()
+        slides.eq(pos).animate({ left: '100%' }, 500);
+        pos = (pos == 0 ? numOfSlides - 1 : --pos);
+        slides.eq(pos).css({ left: '-100%' }).animate({ left: 0 }, 500);
+    }
+    // opretter onclick via class 
+    $('.left').click(previousSlide);
+    $('.right').click(nextSlide);
+})
+
+function onYouTubeIframeAPIReady() {
+    $('.slide').each(function (index, slide) {
+        // tag -video elentet inde i hver .slide
+        var iframe = $(slide).find('.video')[0]
+        // laver ny YT plater fra iframe og gemmer den i slide objectet
+        slide.video = new YT.Player(iframe)
+    })
+}
+
+// slider text i forhold til video
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+};
+
+// funktion til at gemme og vise pop up boxe på forsiden
+function overlay() {
+
+    if (!$('.historie-box').is(':visible')) {
+        $(".historie-box").show();
+
+    } else {
+        $(".historie-box").hide();
+    }
+}
+$(".overly").click(function () {
+    overlay();
+})
+
+function overlayspil() {
+
+    if (!$('.minispil-box').is(':visible')) {
+        $(".minispil-box").show();
+
+    } else {
+        $(".minispil-box").hide();
+    }
+}
+$(".overly").click(function () {
+    overlayspil();
+})
+
+function overlayquiz() {
+
+    if (!$('.quiz-box').is(':visible')) {
+        $(".quiz-box").show();
+
+    } else {
+        $(".quiz-box").hide();
+    }
+}
+$(".overly").click(function () {
+    overlayquiz();
+})
+
+
+
 

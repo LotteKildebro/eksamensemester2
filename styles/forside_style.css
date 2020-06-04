@@ -1,6 +1,6 @@
 
 /* stopper scrool */
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100vh; overflow: hidden}
 /* body med skiftende farver */
 body{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -10,7 +10,7 @@ body{
 }
 /* fungere som body brugt til baggrunds billede */
 #wrapper { 
-    background: url(billeder/Baggrund.png) no-repeat center center fixed; 
+    background: url(../billeder/Baggrund.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -65,8 +65,8 @@ h1, h6{
 .undertitel{
     font-size: 1vw;
     position: absolute;
-    top: 97%;
-    right: 46%;
+    top: 96%;
+    right: 47.5%;
     z-index: -11;
     text-align: center;
     color: white; 
@@ -82,9 +82,9 @@ h1, h6{
 .virus{
     position: absolute;
     z-index: -2;
-    left: 32%;
-    top:35%;
-    animation: spin 190s ease infinite;
+    left: 31.2%;
+    top:32%;
+    animation: spin 280s ease infinite;
 }
 
 .virus {
@@ -95,8 +95,8 @@ h1, h6{
 .header{ 
     position: absolute;
     color:white;
-    left: 38.8%;
-    top:63%;
+    left: 38.2%;
+    top:61.5%;
     z-index: -2;
     text-align: center;
 }
@@ -105,7 +105,7 @@ h1, h6{
 
 
 .kontakt a:link, .kontakt a:visited, .menu a:link, .menu a:visited {
-    font-size: 1.2rem;
+    font-size: 2.3vh;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -132,7 +132,7 @@ h1, h6{
   /* sprites (ikoner der skifter når man hover) */
 
 .sprite img{
-    width: 10%;
+    width: 9%;
     height: auto;
     position: absolute;
   }
@@ -142,15 +142,15 @@ h1, h6{
   }
 .icon2{
     top: 15%;
-    left: 56%;
+    left: 55.5%;
 }
 .icon3{
     top: 62%;
-    left: 22%;
+    left: 21.5%;
 }
 .icon4{
-    top:65%;
-    left:65%;
+    top:62%;
+    left:66%;
 }
 .sprite {
     position: relative;
@@ -242,6 +242,8 @@ h1, h6{
 	}
 }
 
+
+
 /* popup boxe */
 .container-overlay{
     float:none;
@@ -274,10 +276,10 @@ h1, h6{
       overflow-y:auto;
   }
   .modalbox >.dialog {
-      max-width: 50%;
+      max-width: 50vw;
       position: relative;
       top: 0%;
-      left:15%;
+      left:13%;
       margin: 5% 10%;
       padding: 5px 20px 13px 20px;
       border-radius: 10px;
