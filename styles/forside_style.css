@@ -82,9 +82,9 @@ h1, h6{
 .virus{
     position: absolute;
     z-index: -2;
-    left: 31.5%;
-    top:28%;
-    animation: spin 190s ease infinite;
+    left: 31.2%;
+    top:32%;
+    animation: spin 280s ease infinite;
 }
 
 .virus {
@@ -95,8 +95,8 @@ h1, h6{
 .header{ 
     position: absolute;
     color:white;
-    left: 38.6%;
-    top:57%;
+    left: 38.2%;
+    top:61.5%;
     z-index: -2;
     text-align: center;
 }
@@ -137,19 +137,19 @@ h1, h6{
     position: absolute;
   }
 .icon1{
-    top: 10%;
+    top: 18%;
     left: 32%;
   }
 .icon2{
-    top: 8%;
+    top: 15%;
     left: 55.5%;
 }
 .icon3{
-    top: 57%;
+    top: 62%;
     left: 21.5%;
 }
 .icon4{
-    top:57%;
+    top:62%;
     left:66%;
 }
 .sprite {
