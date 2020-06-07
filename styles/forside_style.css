@@ -299,7 +299,7 @@ h1, h6{
       filter: alpha(opacity=20);
       opacity: .6;
       z-index: 9999;
-    cursor:pointer
+    cursor:pointer;
   }
 
 .historie-box h2, .minispil-box h2 , .quiz-box h2{
