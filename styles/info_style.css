@@ -246,28 +246,18 @@ h4{
     padding: 5px;
 }
   /*billeder til om os text*/
-  .imgbox {
-    width: 30%;
-    display: flex;
-    margin: 0;
-  }
-  .imgbox img {
-    width: 80%;
-  }
-  .imgbox2 {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .imgbox2 img {
-    width: 80%;
-  }
+ .cointainer img{
+   width: 400px;
+ }
   /*overskrifter*/
   .marge p, .marge h3{
     padding-left: 10%;
   }
   .marge2 p, .marge2 h3{
     padding-right: 10%;
+  }
+  .marge3 p{
+    text-align: center;
   }
 
   .textbox h3 {
